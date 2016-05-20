@@ -16,5 +16,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="node_modules library-app" level="project" />
     <orderEntry type="library" name="bower_components library-app" level="project" />
+    <orderEntry type="library" name="node_modules yoember-guide" level="project" />
+    <orderEntry type="library" name="bower_components yoember-guide" level="project" />
   </component>
 </module>

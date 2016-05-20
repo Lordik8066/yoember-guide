@@ -1,2 +1,14 @@
 {{outlet}}
 <h1>Contact Page</h1>
+<div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    {{input type="email" class="form-control" value=contactEmail
+    placeholder="Please type your e-mail address." autofocus="autofocus"}}
+</div>
+<div class="form-group">
+    {{ textarea class="form-control" rows="7" placeholder="Your message. (At least 5 characters.)" value=message}}
+</div>
+<button class="btn btn-primary btn-lg btn-block" {{action 'saveContact' model}} disabled={{isNotValid}}>Submit</button>
+{{#if responseMessage}}
+    <div class="alert alert-success">{{responseMessage}}</div>
+{{/if}}
